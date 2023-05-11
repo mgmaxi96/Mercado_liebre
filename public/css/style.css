@@ -14,18 +14,35 @@ body {
 }
 
 .logo {
-    width: 250px;
+    width: 45%;
 }
+.header-top{display: flex;
+flex-wrap: wrap;
+justify-content: space-between;}
+
 
 .titulo1 {
     font-weight: 400;
     text-align: center;
 }
-header div input{width: 25%;
-margin: 10px;
-height: 3vh;}
 
-    
+.search-bar {
+    margin: 15px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    padding: 3px;
+    width: 180px;
+}
+
+.search-bar input {
+    border: none;
+    background-color: whitesmoke;
+    width: 88%;
+}
+
+
+
 
 .burger-menu {
     display: block;
@@ -56,8 +73,7 @@ height: 3vh;}
 
 
 .header-bot {
-    display: flex;
-    justify-content: space-between;
+    display: none;
 }
 
 
@@ -117,6 +133,7 @@ h3 {
     margin: 0 auto;
 
 }
+
 .producto {
     display: flex;
     flex-wrap: wrap;
@@ -128,15 +145,7 @@ h3 {
 
 }
 
-.border {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: left;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
 
-    
-}
 
 .border p {
     margin-left: 10px;
@@ -145,10 +154,11 @@ h3 {
 .border h4 {
     margin-left: 40px;
     margin-top: 20px;
-    visibility:hidden ;
+    visibility: hidden;
     opacity: 0;
 }
-.producto:hover .border h4{
+
+.producto:hover .border h4 {
     visibility: visible;
     opacity: 1;
 }
@@ -164,7 +174,7 @@ h3 {
 .producto img {
     width: 100%;
     padding: 15px;
-    
+
 }
 
 main section article i {
@@ -180,12 +190,14 @@ main section article i {
     position: relative;
     left: 200px;
     top: -30px;
-  
+
 }
-.fa-truck{
+
+.fa-truck {
     transition: 1s;
 }
-.fa-truck:hover{
+
+.fa-truck:hover {
     transform: rotateZ(-90deg);
 }
 
@@ -223,16 +235,32 @@ main {
     height: 3vh;
     justify-content: center;
 }
-.footer{display: flex;}
 
-.detail{display: flex;
+.footer {
+    width: 100%;
+}
+
+.border {
+    display: none;
+}
+
+.footer {
+    display: flex;
+}
+
+.detail {
+    display: flex;
     align-items: center;
-  flex-flow: wrap;
-  flex-direction: column;
-    
+    flex-flow: wrap;
+    flex-direction: column;
+
 }
 
 
+
+.footer {
+    width: 100%;
+}
 
 footer i {
     color: #1259c3;
@@ -240,20 +268,18 @@ footer i {
     margin-bottom: 10px;
     transition: 0.5s;
 }
-footer i:hover{
+
+footer i:hover {
     color: #03264C;
 }
 
 
 
-@media (min-width:361px) {
-.burger-menu{display: none;}
-
-}
-
 @media (min-width:769px) {
-    .burger-menu{display: none;}
-    
+    .burger-menu {
+        display: none;
+    }
+
     .header-top {
         display: flex;
         justify-content: space-between;
@@ -263,6 +289,7 @@ footer i:hover{
         max-width: 350px;
         text-align: right;
     }
+
     .header-top,
     .header-bot {
         max-width: 1200px;
@@ -283,14 +310,33 @@ footer i:hover{
     }
 }
 
+@media (min-width:1200px) {
 
-@media (min-width:0px) and (max-width:480px){
-    .border{display: none;}
-    .header-bot{display: none}
-    .logo{width: 50%;}
-    header div input {width: 50%;}
-   .footer{width: 100%;}
+    .header-bot {
+        display: block;
+    }
 
+    .header-bot {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .border {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: left;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+    }
+
+    .logo{
+        max-width:25% ;
+    }
+    .search-bar{
+        max-width: 25%;
+        padding: 4px;
+    }
+   
 }
 
 
@@ -298,7 +344,7 @@ footer i:hover{
 
 
 
- 
+
 
 
 
