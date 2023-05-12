@@ -16,14 +16,17 @@ body {
 .logo {
     width: 45%;
 }
-.header-top{display: flex;
-flex-wrap: wrap;
-justify-content: space-between;}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 .titulo1 {
     font-weight: 400;
- ;
+    ;
 }
 
 .search-bar {
@@ -39,10 +42,11 @@ justify-content: space-between;}
     background-color: whitesmoke;
     width: 88%;
 }
-button{
-   border: none;
-   background-color: whitesmoke;
-   border-left: 1px solid #ebebeb;
+
+button {
+    border: none;
+    background-color: whitesmoke;
+    border-left: 1px solid #ebebeb;
 }
 
 
@@ -77,8 +81,12 @@ button{
 
 .header-bot {
     display: none;
+    color: #ebebeb;
 }
 
+.header-bot:hover {
+    color: black;
+}
 
 
 .header-bot li {
@@ -97,17 +105,20 @@ h3 {
 
 .precio {
     font-size: 18px;
+    max-width: 30%;
 
 }
 
 .descuento {
     font-size: 16px;
     color: #39b54a;
+    max-width: 70%;
 }
 
 .descripciones {
     font-size: 16px;
     color: #666;
+    overflow: hidden;
 
 }
 
@@ -115,6 +126,14 @@ h3 {
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
+}
+
+
+.main {
+    font-size: 12px;
+    width: 90%;
+    background-color: #ebebeb;
+    margin: 0 auto;
 }
 
 
@@ -128,26 +147,17 @@ h3 {
 
 }
 
-
-.main {
-    font-size: 12px;
-    width: 90%;
-    background-color: #ebebeb;
-    margin: 0 auto;
-
-}
-
 .producto {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     max-width: 280px;
     margin: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    overflow: hidden;
 
 }
-
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 
 
 .border p {
@@ -161,7 +171,12 @@ h3 {
     opacity: 0;
 }
 
+.producto:hover {
+    cursor: pointer;
+}
+
 .producto:hover .border h4 {
+
     visibility: visible;
     opacity: 1;
 }
@@ -310,7 +325,7 @@ footer i:hover {
 }
 
 @media (min-width:1200px) {
-    .header-top{
+    .header-top {
         display: flex;
         justify-content: space-between;
     }
@@ -332,22 +347,25 @@ footer i:hover {
         padding: 15px;
     }
 
-    .logo{
-        max-width:25% ;
+    .logo {
+        max-width: 25%;
     }
-    .search-bar{
+
+    .search-bar {
         width: 28%;
         padding: 11px;
     }
-    .button{
-        width:10%;
+
+    .button {
+        width: 10%;
         height: 126%;
     }
-    .titulo1{
-        margin:auto;
-      
+
+    .titulo1 {
+        margin: auto;
+
     }
-   
+
 }
 
 
