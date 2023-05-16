@@ -224,6 +224,41 @@ main {
     margin: auto;
 }
 
+
+
+.border {
+    display: none;
+}
+
+
+
+.detail {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    flex-direction: column;
+
+}
+
+
+
+.footer {
+    display: flex;
+    width: 100%;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+footer i:hover {
+    color: #03264C;
+}
+
+/*login */
 .login {
     display: flex;
     flex-direction: column;
@@ -249,42 +284,11 @@ main {
     height: 3vh;
     justify-content: center;
 }
-
-.footer {
-    width: 100%;
-}
-
-.border {
-    display: none;
-}
-
-.footer {
+.general{
+    margin:10px;
+    padding: 10px;
     display: flex;
-}
-
-.detail {
-    display: flex;
-    align-items: center;
-    flex-flow: wrap;
-    flex-direction: column;
-
-}
-
-
-
-.footer {
-    width: 100%;
-}
-
-footer i {
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-    transition: 0.5s;
-}
-
-footer i:hover {
-    color: #03264C;
+    justify-content: center;
 }
 
 
@@ -377,12 +381,3 @@ footer i:hover {
 
 
 
-/* parte 19*/
-/*
-
-
-/* parte 19*/
-/* parte 20 - algunos estan en parte 19*/
-/*
-producto{margin: 10px;}
-.border{border-top: 1px solid #ebebeb ;padding: 15px;} 
